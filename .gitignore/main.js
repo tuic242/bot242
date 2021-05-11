@@ -33,4 +33,17 @@ client.on('guildMemberRemove', (member) => {
     client.channels.cache.get(channelID).send(embed)
 })
 
+client.on('message', function (message) {
+    if (message.content === 'REGL1') {
+        const embed = new Discord.RichEmbed()
+        .setTitle("__**Reglement :**__")
+        .setColor('#2e1400')
+        .setDescription("***Voici le relgement de KSE***")
+        .setThumbnail("https://cdn.discordapp.com/attachments/613697754614595597/784589295168127006/KSEDISC.png")
+        .setTimestamp()
+
+        message.channel.send({embed});
+    }
+})
+
 client.login(process.env.TOKEN)
