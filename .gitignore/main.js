@@ -6,15 +6,6 @@ const prefix = '_';
 
 const fs = require('fs');
 
-client.commands = new Discord.Collection();
- 
-const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
-for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
- 
-    client.commands.set(command.name, command);
-}
-
 client.on('ready', () => {
     console.log(`En ligne`)
     client.user.setActivity('Tuic242_ le coder (sa fait peur je vous jure)', ({type: "WATCHING"}))
