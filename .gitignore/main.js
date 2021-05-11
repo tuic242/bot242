@@ -35,14 +35,12 @@ client.on('guildMemberRemove', (member) => {
 
 client.on('message', function (message) {
     if (message.content === 'REGL1') {
-        const embed = new Discord.RichEmbed()
-        .setTitle("__**Reglement :**__")
-        .setColor('#2e1400')
-        .setDescription("***Voici le relgement de KSE***")
-        .setThumbnail("https://cdn.discordapp.com/attachments/613697754614595597/784589295168127006/KSEDISC.png")
+        let embed = new Discord.MessageEmbed()
+        .setTitle("__**Test**__")
+        .setColor('#FFFFFF')
+        .setDescription("Ceci est un test")
         .setTimestamp()
-
-        message.channel.send({embed});
+        client.message.channel.send({embed});
     }
 })
 
