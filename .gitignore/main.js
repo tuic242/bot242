@@ -6,10 +6,10 @@ const prefix = '_';
 
 const fs = require('fs');
 
-client.on('ready', () => {
-    console.log(`En ligne`)
-    client.user.setActivity('Tuic242_ le coder (sa fait peur je vous jure)', ({type: "WATCHING"}))
-})
+client.on.setActivity("Tuic242_", {
+    type:"STREAMING",
+    url: "https://www.twitch.tv/tuic242_"
+});
 
 
 client.on('guildMemberAdd', (member) => {
