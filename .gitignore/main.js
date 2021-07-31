@@ -15,7 +15,7 @@ client.on('ready', () => {
       });
 })
 
-lient.on('guildMemberAdd', (member) => {
+client.on('guildMemberAdd', (member) => {
     let channelID = '787014965356920839';
     if(member.guild.id != '721298461420421131') return;
     let embed = new Discord.MessageEmbed()
