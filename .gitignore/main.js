@@ -6,7 +6,9 @@ const prefix = '_';
 
 const fs = require('fs');
 
-client.user.setActivity("Tuic242_", {
+client.on('ready', () => {
+  console.log('On');
+  client.user.setActivity("Tuic242_", {
     type:"STREAMING",
     url: "https://www.twitch.tv/tuic242_"
 });
