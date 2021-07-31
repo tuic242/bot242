@@ -6,13 +6,14 @@ const prefix = '_';
 
 const fs = require('fs');
 
+
 client.on('ready', () => {
-  console.log('On');
-  client.user.setActivity("Tuic242_", {
+    console.log(`En ligne`)
+    client.user.setActivity("Tuic242_", {
     type:"STREAMING",
     url: "https://www.twitch.tv/tuic242_"
-});
-
+      });
+})
 
 client.on('guildMemberAdd', (member) => {
     let channelID = '792002090800644116';
