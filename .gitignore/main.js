@@ -8,7 +8,7 @@ const fs = require('fs');
 
 
 client.on('ready', () => {
-    console.log(`En ligne`)
+    console.log(`Bot Actif BB`)
     client.user.setActivity("Tuic242_", {
     type:"STREAMING",
     url: "https://www.twitch.tv/tuic242_"
