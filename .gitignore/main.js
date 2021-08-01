@@ -20,7 +20,7 @@ client.on('guildMemberAdd', (member) => {
     if(member.guild.id != '721298461420421131') return;
     let embed = new Discord.MessageEmbed()
     .setTitle('Bienvenue 👋 !')
-    .setDescription(`${member.user.tag} Salut ;) Hésite pas a check le règlement pour avoir accés au discord !`)
+    .setDescription(`${member.user.tag} Salut ;) Hésite pas a check le <#764436186076282942> pour avoir accès au discord !`)
     .setColor('#7300ff')
     .setTimestamp()
     client.channels.cache.get(channelID).send(embed)
