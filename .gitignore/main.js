@@ -16,7 +16,7 @@ client.on('ready', () => {
 })
 
 client.on('guildMemberAdd', (member) => {
-    let channelID = '787014965356920839';
+    let channelID = '792002090800644116';
     if(member.guild.id != '721298461420421131') return;
     let embed = new Discord.MessageEmbed()
     .setTitle('Bienvenue 👋 !')
@@ -27,7 +27,7 @@ client.on('guildMemberAdd', (member) => {
 })
 
 client.on('guildMemberRemove', (member) => {
-    let channelID = '787014965356920839';
+    let channelID = '792002090800644116';
     if(member.guild.id != '721298461420421131') return;
     let embed = new Discord.MessageEmbed()
     .setTitle('A Bientot !')
